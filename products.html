@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+   <head>
+           <title>Gorey Cycle Centre</title>
+<link rel="shortcut icon" href="images/logo.jpg" />
+<link rel ="stylesheet" href="css/style.css">
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   </head>
+<body   style="background-image:url(images/background.jpg);">
+
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  
+<img src="images/website.gif" alt="Logo" href="index.html" style="width:150px;">
+   <a class="navbar-brand" href="contactus.html">About</a>
+    <a class="navbar-brand" href="cycletoworkscheme.html" >Cycle To Work Scheme</a>
+	  <a class="navbar-brand" href="Products.html" >Products</a>
+	    <a class="navbar-brand" href="repairs.html" >Repairs</a>
+		  <a class="navbar-brand" href="index.html" >Home</a>
+	
+    
+  </a>
+  
+</nav>
+
+<script id="some-template" type="text/x-handlebars-template">
+
+<div class="container">
+<header>
+      <h1 class="text-center">Gorey Cycle Centre <br><small>Please add a product you would like us to stock!</small></br></h1>
+      <button class="float-right btn btn-primary" id="btncall" data-toggle="modal" data-target="#modalForm">Add Product</button>
+</header>
+<section>
+<table class="table table-hover table-striped" >
+<thead>
+<tr>
+<th>Product Code</th>
+<th>Product Name</th>
+<th>Shop Branch</th>
+<th>Your Email Address</th>
+</tr>
+</thead>
+<tbody>
+{{#each this}}
+<tr>
+<td>{{id}}</td>
+<td>{{firstname}} {{lastname}} </td>
+<td>{{county}}</td>
+<td>{{email}}</td>
+</tr>
+{{/each}}
+</tbody>
+</table>
+</section>
+
+</div>
+</script>
+
+<div id = "content-placeholder"></div>
+
+<div class="modal fade" id ="modalForm"   role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h1>Add Product</h1>
+</div>
+<div class= modal-body>
+<form name = 'emplist' id = "emplist" >
+<div class="form-group row">
+<label for = "id" class="col-sm-3 col-form-label">Stock Number</label>
+<div class="col-sm-9">
+<input type = "text" name="id" id ="id" autofocus class="form-control" required pattern = "\d"
+                title="Please enter numeric values only">
+</div>
+</div>
+<div class="form-group row">
+<label for = "firstname" class="col-sm-3 col-form-label">Brand Name</label>
+<div class="col-sm-9">
+<input type = "text" name="firstname" id="firstname" class="form-control" required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)?"
+                title="Please enter your first name (Model Type optional) with First Letter capitalised">
+</div>
+</div>
+<div class="form-group row">
+<label for = "lastname" class="col-sm-3 col-form-label">Brand Model</label>
+<div class="col-sm-9">
+<input type = "text" name="lastname" id="lastname" class="form-control" required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)?"
+                title="Please enter a Surname (Model Type optional) with First Letter capitalised">
+</div>
+</div>
+<div class="form-group row">
+<label for = "county" class="col-sm-3 col-form-label">Shop Branch</label>
+<div class="col-sm-9">
+<input type = "text" name="county" id="county" class="form-control" required pattern = "[A-Z][a-z]+" title ="Please enter a valid Shop Branch with First Letter capitalised">
+</div>
+</div>
+<div class="form-group row">
+<label for = "email" class="col-sm-3 col-form-label">Your Email Address</label>
+<div class="col-sm-9">
+<input type = "email" name="email" id="email" class="form-control" required pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$"
+     title="Please enter a valid email">
+</div>
+</div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <input type="submit" id="thesubmit" value="Add Product">
+    </div>
+  </div>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<p>Here is a List of All the Brands Stocked in Store</p>
+
+<p id="demo"></p>
+
+<script>
+
+var myObj, i, j, x = "";
+myObj = {
+    "name":"John",
+    "age":30,
+    "cars": [
+        { "name":"Bicycles", "models":[ "Trek", "Giant", "Claud Butler", "Fuji", "Scott", "Kellys", "Gt", "Liv", "Raleigh", "Motion", "Diamondback", "Scott", "Merida",  ] },
+        { "name":"Berg", "models":[ "Trampolines: Ingrond and Overground", "Go Karts", "Kids toys", "Other Toys and Accesories all in Store" ] },
+        { "name":"Accesories", "models":[ "Bike 7", "Red", "BBB", "Giant", "Liv", "Diamondback", "Lazer", "Continental" ] }
+    ]
+}
+
+for (i in myObj.cars) {
+    x += "<h2>" + myObj.cars[i].name + "</h2>";
+    for (j in myObj.cars[i].models) {
+        x += myObj.cars[i].models[j] + "<br>";
+    }
+}
+
+document.getElementById("demo").innerHTML = x;
+
+</script>
+
+
+
+
+<p> The websites for our main suppliers can be found here:    .
+<a href="https://www.giant-bicycles.com/ie" target="_blank">
+  <img src="images/giant-logo.gif" alt="logo" style="width:120px;">
+  
+  <a href="https://www.trekbikes.com/ie/en_IE/" target="_blank">
+  <img src="images/trek-logo.gif" alt="logo" style="width:120px;">
+  
+  <a href="http://claudbutler.co.uk/" target="_blank">
+  <img src="images/claudbutler-logo.gif" alt="logo" style="width:120px;">
+  
+   <a href="https://www.raleigh.co.uk/" target="_blank">
+  <img src="images/raleigh-logo.gif" alt="logo" style="width:120px;">
+  
+  
+  </p>
+	
+
+
+  
+
+
+
+<footer class="pt-3 pb-1 container-fluid bg-2 text-center">
+
+  
+  <a href="https://www.facebook.com/GoreycyclecentreLTD/" target="_blank">
+  
+  <img src="images/facebook.gif" alt="logo" style="width:80px;">
+  
+</footer>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/exercise1.js"></script>
+<script src="js/stock.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+		$('#gallery img').css('opacity', 1.0);
+
+$('#gallery img').on('mouseover', function() {
+     $(this).css('opacity', 0.6);
+});
+
+$('#gallery img').on('mouseout', function() {
+     $(this).css('opacity', 1.0);
+});
+	
+}); // end ready()
+
+
+</script>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src='js/handlebars.min.js'></script>
+
+
+
+</body>
+
+
+
+</html>

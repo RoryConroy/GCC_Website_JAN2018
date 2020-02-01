@@ -1,0 +1,237 @@
+
+
+p {
+	text-align: center;
+	
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	text-align: center;	
+}
+
+section {
+  padding-top:5%;
+}
+
+
+
+figure {
+	width:40%;
+	float:left;
+}
+
+
+
+
+	
+
+h3 {
+	text-align: center;
+	font-family: Verdana;
+}
+ 
+ 
+th,td {
+	border-bottom: 5px solid #ddd;	
+	color: #101010;
+	
+}
+table {
+	width: 100%;
+	
+}
+th {
+	height: 50px;
+	
+	
+}
+
+td {
+	opacity:1.0;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+
+body{
+	margin: 2em;
+	margin-left: 8%;
+	margin-right: 8%;
+	overflow: auto;
+background-size: auto auto;
+
+}
+
+section {
+	overflow:auto;
+}
+
+
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+
+h5 {
+	text-align: center;
+}
+
+
+
+
+  body {
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+
+  .bg-1 {
+     background-color: #80bfff; /* Green */
+     color: #ffffff;
+  }
+  .bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+
+
+.navbar {
+  border: 0;
+  border-radius: 0;
+  font-size: 12px;
+  letter-spacing: 8px;
+ }
+
+a:link,  a:visited {
+  text-decoration:underline;
+     color:#404040;
+}
+
+a:hover {
+  text-decoration:none;
+  color:gray;
+}
+
+figure {
+  border-bottom: 1px solid navy;
+  margin-bottom: 2%;
+}
+
+figcaption {
+  color:navy;
+  font-size: 75%;
+  font-weight: bold;
+  margin-top: 0;
+  width: 90%;
+  line-height: 1.4em;
+}
+
+figcaption span {
+  font-weight: normal;
+  color: gray;
+}
+legend {   
+  font-weight: bold;   
+  font-size: medium;   
+  color: navy;  
+  border-bottom: 2px solid navy;
+}
+
+
+
+form#contact label {  
+  font-weight: bold;  
+  font-size: small;  
+  color: blue;  
+  line-height: 150%;
+}
+
+#gallery {
+  width:400px;
+}
+
+input[type="text"]:valid,  input[type="tel"]:valid, input[type="date"]:valid, input[type="email"]:valid, input[type="password"]:valid, input[type="url"]:valid{
+    color: green;
+}
+
+/* Unmatched */
+input[type="text"]:invalid, input[type="tel"]:invalid,input[type="date"]:invalid, input[type="email"]:invalid, input[type="password"]:invalid, input[type="url"]:invalid{
+    color: red;
+    border-color:red;
+}
+
+.form-control:focus {
+  border-color: inherit;
+  box-shadow: none;
+}
+
+.validationError {
+  color: white !important;
+  background-color:red !important;
+}
+
+ui-state-error {
+  font-size: 1em;
+  color: gray;
+  font-weight: bold;
+  background-color:transparent;
+  border-color:transparent;
+}
+
+
+.navbar-nav li.nav-item a.nav-link:link, .navbar-nav li.nav-item a.nav-link:visited, a.navbar-brand:link,
+   a.navbar-brand:visited, a.btn:link, a.btn:visited {
+  color:white;
+  text-decoration:none;
+}
+
+.navbar-nav  li.nav-item a.nav-link:hover, a.navbar-brand:hover, a.btn:hover {
+  color: #0000ff !important;
+}
+
+footer a:link, footer a:visited {
+  color:#ffc;
+  text-decoration:underline;
+}
+
+footer a:hover {
+  text-decoration:none;
+  color:white;
+}
+
+.margin {
+  border-radius:20%;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  line-height: 1.5;
+}
+
+ol {
+	    list-style-type: none;
+}
+
+footer{
+	width: 100%;
+}
+
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+
+
+

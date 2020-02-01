@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+   <head>
+           <title>Gorey Cycle Centre</title>
+<link rel="shortcut icon" href="images/logo.jpg" />
+<link rel ="stylesheet" href="css/style.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+   </head>
+
+<body style="background-image:url(images/background.jpg);">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<img src="images/website.gif" alt="Logo"  style="width:150px;">
+ 
+		  <a class="navbar-brand" href="index.html" >Return to website</a>
+	
+    
+  </a>
+  
+</nav>
+
+<body>
+<div class="container">
+<div class = "row">
+<header class="col">
+      <h1>Gorey Cycle Centre</h1>
+      
+</header>
+</div>
+<div class="row">
+
+<section class="col-md-10 col-sm-9 col-8">
+
+
+ <article>
+ <div class="row">
+ <div class="col">
+ 
+<p>To let us know about any questions or queries you may have Please use this form below.</p>
+<p>If you need to get in touch urgently, please call The shop on on 053-9420326. For anything else, please <a href="goreycyclecentre@hotmail.com">drop us a line by email</a>.</p>
+
+<form action="process.html" method="get" id = "contact" class="form-horizontal" role="form">
+
+<div class = "form-group row">
+    <label for="contactname" class="col-sm-2 control-form-label">Contact Name</label>
+    <div class="col-sm-10">
+     <input type="text" name="contactname" id="contactname" class="form-control" data-h5-errorid="invalid-name" autofocus required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*"
+     title="Please enter a name (Surname optional) with First Letter capitalised">
+	 <div id="invalid-name" class="ui-state-error"></div>
+    </div>
+</div>
+
+
+<div class = "form-group row">
+    <label for="telephone" class="col-sm-2 control-form-label">Telephone Number</label>
+    <div class="col-sm-10">
+     <input class="form-control" type="tel" name="telephone" id="telephone" data-h5-errorid="invalid-number"   required pattern = "^(\(\d{3}\)|\d{3})-?\d{6,}$"
+     title = "Please enter a nine digit phone number">
+	 	 <div id="invalid-number" class="ui-state-error"></div>
+
+    </div>
+</div>
+
+<div class = "form-group row">
+    <label for="email" class="col-sm-2 control-form-label">Email Address</label>
+    <div class="col-sm-10">
+     <input type="email" name="email" id="email" class="form-control" data-h5-errorid="invalid-email" required  pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$"
+     title="Please enter a valid email adress">
+	 <div id="invalid-email" class="ui-state-error"></div>
+    </div>
+ </div>
+
+
+
+<div class = "form-group row">
+    <label for="eventdate" class="col-sm-2 control-form-label">When are you planning to visit?</label>
+   <div class="col-sm-10">  
+    <div class="input-group date">
+          <input id="eventdate" type="text" name='eventdate'  data-h5-errorid="invalid-date"class="form-control">
+          <label for="eventdate" class="input-group-addon"><i class="fa fa-calendar-check-o"></i>
+          </label>
+		  	 	 <div id="invalid-date" class="ui-state-error"></div>
+
+       </div>
+	   
+	</div>
+</div>
+
+<div class = "form-group row">
+   <label for="region" class="col-sm-2 control-form-label">What region are you contacting from?</label>
+   <div class="col-sm-10">
+    <select name="region" id="region" class="form-control" >
+        <option value ="South West">North</option>
+        <option value ="South East">South</option>
+        <option value ="Midlands">East</option>
+        <option value ="Central">West</option>
+        <option value ="London">North west</option>
+        <option value ="East">North east</option>
+        <option value ="North">South West</option>
+        <option value ="Scotland">South east</option>
+        <option value ="Northern Ireland">Northern Ireland</option>
+        <option value = "Overseas">Overseas</option>
+    </select>
+   </div>
+</div>
+
+<div class = "form-group row">
+  <p><u>Please provide any other details you think will be useful to us in the text area below</u>
+  (it may save us calling or emailing you, and help avoid delays).</p>
+  <label for="details" class="col-sm-2 control-form-label">More details (as much as you think we'll need!)</label>
+  <div class="col-sm-10">
+  <textarea name="details" id="details" cols="30" rows="7" class="form-control"></textarea>
+  </div>
+</div>
+
+<div class = "form-group row">
+  <p>If we need to call you back for any more info, what would be the
+  best time to call you on the number supplied?</p>
+ <div class="col-sm-10">
+         <div class="form-check">
+           <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="timetocall" id="morning" value="Morning" checked="checked">In the morning
+        </label>
+ </div>
+         <div class="form-check">
+           <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="timetocall" id="afternoon" value="Afternoon">In the afternoon
+        </label>
+ </div>
+
+          <div class="form-check">
+           <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="timetocall" id="evening" value="Evening">In the evening
+        </label>
+ </div>
+
+         <div class="form-check">
+           <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="timetocall" id="never" value="Never">No calls please
+        </label>
+ </div>
+ </div>
+
+ </div>
+
+
+<div class = "form-group row">
+  <p>Gorey Cycle Centre may share information you give us here with other
+  like-minded people or web sites to promote the event. Please confirm if you
+  are happy for us to do this.</p>
+ <div class="col-sm-10">
+         <div class="form-check">
+           <label class="form-check-label">
+             <input class="form-check-input" type="checkbox" ame="publicize" id="publicize" value="option1" checked>
+               I am happy for this event to be publicized outside of and
+               beyond goreycyclecentre.com, where possible</label>
+           </label>
+         </div>
+
+</div>
+</div>
+
+
+<div class = "form-group row ">
+ <div class="col-sm-10">
+  <input type="submit"  class="btn btn-primary" value="Send Us the Info">
+  <input type="reset" class="btn btn-primary" value="Clear the Info">
+</div>
+</div>
+
+</form>
+</div>
+</div>
+</article>
+</section></div></div>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/jquery.h5validate.js"></script>
+<script>
+$(document).ready(function () {
+
+
+  $( "#eventdate" ).datepicker({
+  format: "dd-mm-yyyy",
+   startDate: "+0d"
+});
+		$('form').h5Validate({errorClass:'validationError' });
+});
+
+</script>
+</body>
+</html>
+
+
+
+
+
+  
